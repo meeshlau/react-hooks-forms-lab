@@ -11,6 +11,7 @@ function App() {
     setIsDarkMode((isDarkMode) => !isDarkMode);
   }
 
+
   return (
     <div className={"App " + (isDarkMode ? "dark" : "light")}>
       <Header isDarkMode={isDarkMode} onDarkModeClick={handleDarkModeClick} />

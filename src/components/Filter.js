@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Filter({ onCategoryChange }) {
+  const [item, setItem] = useState("item")
+
+  function handleCategoryChange(event) {
+    setItem(event.target.value)
+  }
   return (
     <div className="Filter">
       <input type="text" name="search" placeholder="Search..." />

@@ -7,14 +7,16 @@ function ItemForm({ onItemFormSubmit }) {
   const [category, setCategory] = useState("Produce")
 
 
+
   function handleSubmit(e) {
     e.preventDefault()
-   const newItem = {
+    const newItem = {
       id: uuid(),
       name: itemName,
       category: category
     }
-    console.log
+  
+    onItemFormSubmit(newItem)
    
     }
 
